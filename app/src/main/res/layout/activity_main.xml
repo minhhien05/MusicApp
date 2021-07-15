@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/rlt_home"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="List Music"
+            android:textSize="25sp"
+            android:textColor="#132451"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlt_bong"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/rlt_home"
+        android:background="@drawable/bg_bong"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_3107_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bogoc"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_3107_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bai_3107_2"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/iv_3107_2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3107-2"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duongg, W/n, Nâu"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="15dp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_below="@+id/cv_3107_2"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bogoc"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_3107"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bai_badliar"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/iv_3107"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bad Liar"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Imagine Dragons"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="15dp"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
