@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicAppASM">
         <activity android:name=".PlayMusic"></activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/FullScreen">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
