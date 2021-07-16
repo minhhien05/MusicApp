@@ -7,118 +7,379 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:id="@+id/rlt_home"
-        android:padding="16dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="List Music"
-            android:textSize="25sp"
-            android:textColor="#132451"
-            android:textStyle="bold"/>
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/rlt_bong"
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_below="@+id/rlt_home"
-        android:background="@drawable/bg_bong"/>
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_3107_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="1dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        tools:ignore="MissingConstraints">
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:background="@drawable/bogoc"
-            android:padding="8dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/iv_3107_2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/bai_3107_2"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_toRightOf="@+id/iv_3107_2"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlt_home"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:background="@color/white"
+                android:padding="16dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3107-2"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="8dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Duongg, W/n, Nâu"
-                    android:layout_marginLeft="8dp"
-                    android:textSize="15dp"
-                    android:textStyle="normal"/>
+                    android:layout_centerInParent="true"
+                    android:text="List Music"
+                    android:textColor="#132451"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
-            </LinearLayout>
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlt_bong"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
 
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="1dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:layout_below="@+id/cv_3107_2"
-        tools:ignore="MissingConstraints">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:background="@drawable/bogoc"
-            android:padding="8dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/iv_3107"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/bai_badliar"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_toRightOf="@+id/iv_3107"
+            <RelativeLayout
+                android:id="@+id/rlt_3107_2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bad Liar"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="8dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Imagine Dragons"
-                    android:layout_marginLeft="8dp"
-                    android:textSize="15dp"
-                    android:textStyle="normal"/>
-            </LinearLayout>
-        </RelativeLayout>
+                android:padding="8dp">
 
-    </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:id="@+id/iv_3107_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_3107_2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_3107_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="3107-2"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Duongg, W/n, Nâu"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_badliar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_badliar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_badliar"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Bad Liar"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Imagine Dragons"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_3107"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_3107" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_3107"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="3107"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Duongg, W/n, Nâu"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_haconvuongnang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_ha_con_vuong_nang" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_haconvuongnang"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Hạ Còn Vương Nắng"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="DatKaa, Kido"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_nhuanhmo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_nhu_anh_mo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_nhuanhmo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Như Anh Mơ"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="PC"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/ic_anhbiet"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_anh_biet" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_anhbiet"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Anh Biết"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="D.Blue, Xám"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_noaidoloixinloi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_no_ai_do_loi_xin_loi" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_noaidoloixinloi"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Nợ Ai Đó Lời Xin Lỗi"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Bozitt"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_chominhem"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bai_cho_minh_em" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_chominhem"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Cho Mình Em"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Binz, Đen"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_bong" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
