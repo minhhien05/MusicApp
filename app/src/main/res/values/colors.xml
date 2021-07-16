@@ -15,4 +15,13 @@
     <color name="secondary_text">#212121</color>
     <color name="dark_shadow">#C5C5C5</color>
     <color name="light_shadow">#FFFFFF</color>
+
+    <color name="main_color">#132451</color>
+    <color name="bg">#80F5F5DC</color>
+
+
+    <color name="icon_text_tint">#083221</color>
+
+
+
 </resources>

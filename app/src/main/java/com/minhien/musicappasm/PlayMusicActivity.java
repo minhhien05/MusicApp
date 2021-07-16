@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import soup.neumorphism.NeumorphImageView;
 
-public class PlayMusic extends AppCompatActivity {
+public class PlayMusicActivity extends AppCompatActivity {
 
     NeumorphImageView back;
 
@@ -19,10 +19,11 @@ public class PlayMusic extends AppCompatActivity {
         setContentView(R.layout.activity_play_music);
 
         back = findViewById(R.id.imageMenu);
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(PlayMusic.this,MainActivity.class);
+                Intent i = new Intent(PlayMusicActivity.this,MainActivity.class);
                 startActivity(i);
             }
         });

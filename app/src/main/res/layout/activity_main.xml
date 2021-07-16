@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/bg"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -21,8 +22,16 @@
                 android:id="@+id/rlt_home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/bg"
                 android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/back_home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginTop="7dp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -44,7 +53,8 @@
                 android:id="@+id/rlt_3107_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
 
                 <ImageView
                     android:id="@+id/iv_3107_2"
