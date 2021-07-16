@@ -93,7 +93,7 @@
                     android:src="@drawable/ic_musically"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:tint="@color/icon_text_tint" />
+                    android:tint="@color/icon_text_tint" />
                 <TextView
                     android:id="@+id/txt_home_edit"
                     style="@style/Home4TextBtn"
@@ -135,7 +135,7 @@
                     android:src="@drawable/ic_category"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:tint="@color/icon_text_tint" />
+                    android:tint="@color/icon_text_tint" />
                 <TextView
                     android:id="@+id/txt_home_collage"
                     style="@style/Home4TextBtn"
@@ -183,7 +183,7 @@
                     android:src="@drawable/ic_album"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:tint="@color/icon_text_tint" />
+                    android:tint="@color/icon_text_tint" />
                 <TextView
                     android:id="@+id/txt_home_beauty"
                     style="@style/Home4TextBtn"
@@ -221,7 +221,7 @@
                     android:src="@drawable/ic_user"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:tint="@color/icon_text_tint" />
+                    android:tint="@color/icon_text_tint" />
                 <TextView
                     style="@style/Home4TextBtn"
                     android:layout_weight="7"
